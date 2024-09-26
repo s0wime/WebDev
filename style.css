@@ -1,0 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main h1, .main p {
+    margin: 15%;
+    text-align: center;
+}
