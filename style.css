@@ -1,16 +1,19 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.main h1, .main p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.main {   
     text-align: center;
 }
 
 .homeworks {
-    height: 25vh;
+    height: 40vh;
     width: 25%;
+
+    display: inline-block;
+    margin-top: 10%;
 
     text-align: center;
     border-radius: 15px;
@@ -21,6 +24,10 @@
     height: 5vh;
     width: 80%;
 
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: 0;
+
     line-height: 5vh;
     border-radius: 15px;
     background-color: aliceblue;
@@ -28,10 +35,11 @@
 
 .homeworks a {
     color: rgb(0, 195, 255);
-    font-size: 2vw;
+    font-size: 1.5vw;
     background-color: aliceblue;
     padding: 1% 2%;
 
+    text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
 }
   
