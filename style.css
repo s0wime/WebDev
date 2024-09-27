@@ -51,11 +51,11 @@
     border-color: #6c757d;
 }
 
-.homeworks li {
-    height: 5vh;
-    width: 80%;
+.homeworks ul {
+    margin-top: 10px;
+}
 
+.homeworks li {
     display: inline-block;
-    margin: 10px;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
