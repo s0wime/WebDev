@@ -7,10 +7,11 @@
     width: 100%;
     height: 15vh;
     text-align: center;
-    background-color: blue;
+    background-color: #b75a48;
 }
 
 #header p {
+    width: 60%;
     margin-top: 25px;
     margin-right: 35px;
     float: right;
@@ -19,31 +20,64 @@
 #x {
     margin-top: 25px;
     margin-left: 35px;
+    background-color: #e8ecd6;
     float: left;
+}
+
+#footer {
+    float: left;
+}
+
+#footer p {
+    width: 60%;
+    margin-top: 25px;
+    margin-left: 35px;
+    float: left;
+}
+
+#y {
+    margin-top: 25px;
+    margin-right: 35px;
+    background-color: #e8ecd6;
+    float: right;
 }
 
 #leftpanel, #rightpanel {
     width: 20%;
     height: 70vh;
     text-align: center;
-    background-color: yellow;
+    background-color: #b2c6b6;
     float: left;
 }
 
 #leftpanel p, #rightpanel p {
     margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #rightpanel {
     height: 65vh;
+    text-align: start;
     float: left;
+}
+
+#rightpanel li {
+    margin-left: 20px;
 }
 
 #longpanel {
     width: 80%;
     height: 5vh;
-    background-color: lightgreen;
+    
+    line-height: 5vh;
+    
+    background-color: #e8ecd6;
     float: left;
+}
+
+#longpanel p {
+    margin-left: 10px;
 }
 
 #centerpanel {
@@ -53,7 +87,7 @@
     float: left;
 }
 
-#footer {
-    background-color: darkblue;
-    float: left;
+#centerpanel img {
+    max-height: 100%;
+    max-width: 100%;
 }
