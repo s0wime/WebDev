@@ -66,6 +66,7 @@
 
 #rightpanel {
     grid-column: 3;
+    grid-row: 3 / 5;
     text-align: start;
     float: left;
 }
