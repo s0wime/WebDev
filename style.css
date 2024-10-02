@@ -31,9 +31,7 @@ main {
 }
 
 .button {
-  padding: 15px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 10px 70px 10px 70px;
   margin-bottom: 5px; 
   font-size: 1.3rem;
     
