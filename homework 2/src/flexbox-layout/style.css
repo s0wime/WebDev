@@ -1,95 +1,77 @@
-* {
-    margin: 0;
+
+body {
     padding: 0;
-}
-
-.flex-container {
+    margin: 0;
+    font-family: "Gill Sans", sans-serif;
     display: flex;
-    height: 100vh;
     flex-direction: column;
+    min-height: 100vh;
 }
 
-#header, #footer {
+header {
     width: 100%;
-    height: 15%;
-    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
     background-color: #b75a48;
 }
 
-#header p {
+header p, footer p {
+    margin: 20px;
     width: 60%;
-    margin-top: 25px;
-    margin-right: 35px;
-    float: right;
 }
 
-#x {
-    margin-top: 25px;
-    margin-left: 35px;
-    background-color: #e8ecd6;
-    float: left;
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
 }
 
-#footer {
-    
-}
-
-#footer p {
-    width: 60%;
-    margin-top: 25px;
-    margin-left: 35px;
-    float: left;
-}
-
-#y {
-    margin-top: 25px;
-    margin-right: 35px;
-    background-color: #e8ecd6;
-    float: right;
-}
-
-#leftpanel, #rightpanel {
-    width: 15%;
-    height: 70%;
+#leftpanel {
+    width: 20%;
     text-align: center;
     background-color: #b2c6b6;
 }
 
-#leftpanel p, #rightpanel p {
+#leftpanel p {
+    margin: 10px;
     margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
-#rightpanel {
-    height: 65%;
-    text-align: start;
-}
-
-#rightpanel li {
-    margin-left: 20px;
+.center {
+    display: flex;
+    flex-direction: column;
 }
 
 #longpanel {
-    width: 85%;
-    height: 5%;
-    line-height: 5vh;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
     background-color: #e8ecd6;
 }
 
-#longpanel p {
-    margin-left: 10px;
+.core {
+    display: flex;
+    min-height: 100vh;
 }
 
-#centerpanel {
-    width: 70%;
-    height: 65%;
-    background-color: lightgray;
+#rightpanel {
+    width: 15vw;;
+    background-color: #b2c6b6;
 }
 
-#centerpanel img {
-    max-height: 100%;
-    max-width: 100%;
+#rightpanel p {
+    margin-left: 10px; 
+}
+
+#photopanel {
+    width: 70vw;
+    align-content: center;
+}
+
+h1 {
+    background-color: #e8ecd6;
+    margin: 20px;
 }
 
 a {
@@ -103,4 +85,17 @@ a:link, a:visited {
 
 a:hover {
     color: #b75a48;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #b75a48;
 }
