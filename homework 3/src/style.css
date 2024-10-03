@@ -2,7 +2,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +13,7 @@ header {
   width: 100%;
   padding: 15px 0px 15px 0px;
   font-size: 1.2rem;
-  background-color: #363636; 
+  background-color: #212529; 
   color: white;
   text-align: center;
 }
@@ -32,7 +32,7 @@ main {
   border-radius: 50%;
   width: 48px;
   height: 48px;
-  color: #363636;
+  color: #212529;
 }
 
 .loader:before,
@@ -105,7 +105,7 @@ footer {
   width: 100%;
   padding: 15px 0px 15px 0px;
   font-size: 1.1rem;
-  background-color: #363636;
+  background-color: #212529;
   color: white;
   text-align: center;
 }
