@@ -4,7 +4,7 @@
     padding: 0px;
 }
 
-.block1 {
+header {
     height: 15vh;
     width: 100%;
     background-color: lightblue;
@@ -12,7 +12,7 @@
     float: top;
 }
 
-.block1 p {
+header p {
     width: 70%;
 
     margin-top: 2%;
@@ -87,7 +87,7 @@
     margin-bottom: 3%;
 }
 
-.block6 {
+footer {
     height: 15vh;
     width: 100%;
     background-color: lightblue;
@@ -95,7 +95,7 @@
     float: left;
 }
 
-.block6 p {
+footer p {
     width: 70%;
 
     margin-top: 2%;
