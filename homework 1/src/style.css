@@ -1,125 +1,125 @@
-
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 header {
-    height: 15vh;
-    width: 100%;
-    background-color: lightblue;
+  height: 15vh;
+  width: 100%;
+  background-color: lightblue;
 
-    float: top;
+  float: top;
 }
 
 header p {
-    width: 70%;
+  width: 70%;
 
-    margin-top: 2%;
-    margin-right: 3%;
-    margin-left: auto;
+  margin-top: 2%;
+  margin-right: 3%;
+  margin-left: auto;
 
-    float: right;
+  float: right;
 }
 
 .block2 {
-    height: 70vh;
-    width: 15%;
-    background-color: lightsalmon;
+  height: 70vh;
+  width: 15%;
+  background-color: lightsalmon;
 
-    text-align: center;
+  text-align: center;
 
-    float: left;
+  float: left;
 }
 
 .block2 p {
-    margin-top: 5%;
-    margin-left: 3%;
-    margin-right: 3%;
+  margin-top: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
-.block3 {
-    height: 5vh;
-    width: 85%;
-    background-color: lightgreen;
+nav {
+  height: 5vh;
+  width: 85%;
+  background-color: lightgreen;
 
-    line-height: 5vh;
+  line-height: 5vh;
 
-    float: left;
+  float: left;
 }
 
-.block3 p {
-    margin-left: 1%;
+nav p {
+  margin-left: 1%;
 }
 
 .block4 {
-    height: 65vh;
-    width: 70%;
-    background-color: lightsalmon;
+  height: 65vh;
+  width: 70%;
+  background-color: lightsalmon;
 
-    float: left;
+  float: left;
 }
 
 .block4 img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .block5 {
-    height: 65vh;
-    width: 15%;
-    background-color: lightsalmon;
+  height: 65vh;
+  width: 15%;
+  background-color: lightsalmon;
 
-    float: right;
+  float: right;
 }
 
 .block5 p {
-    margin-top: 5%;
-    text-align: center;
+  margin-top: 5%;
+  text-align: center;
 }
 
 .block5 ol {
-    margin-top: 5%;
-    padding-left: 30px;
+  margin-top: 5%;
+  padding-left: 30px;
 }
 
 .block5 ol li {
-    margin-bottom: 3%;
+  margin-bottom: 3%;
 }
 
 footer {
-    height: 15vh;
-    width: 100%;
-    background-color: lightblue;
+  height: 15vh;
+  width: 100%;
+  background-color: lightblue;
 
-    float: left;
+  float: left;
 }
 
 footer p {
-    width: 70%;
+  width: 70%;
 
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: auto;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: auto;
 
-    float: left;
+  float: left;
 }
 
-.x, .y {
-    height: 5vh;
-    width: 20%;
-    background-color: white;
-    margin-top: 2%;
-    margin-left: 2%;
+.x,
+.y {
+  height: 5vh;
+  width: 20%;
+  background-color: white;
+  margin-top: 2%;
+  margin-left: 2%;
 
-    text-align: center;
-    line-height: 5vh;
+  text-align: center;
+  line-height: 5vh;
 
-    float: inline-start;
+  float: inline-start;
 }
 
 .y {
-    margin: 2%;
+  margin: 2%;
 
-    float: right;
+  float: right;
 }
