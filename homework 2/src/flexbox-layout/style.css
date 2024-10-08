@@ -1,101 +1,126 @@
-body {
+* {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-container {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  margin: 0 20px;
   min-height: 100vh;
 }
 
 header {
-  width: 100%;
-  height: 100px;
   display: flex;
-  align-items: center;
+  padding: 20px;
+  border-radius: 0 0 15px 15px;
   background-color: #b75a48;
+  text-align: center;
+  justify-content: space-between;
 }
 
-header p,
-footer p {
-  margin: 20px;
-  width: 60%;
+#x {
+  width: 200px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #e8ecd6;
+}
+
+.header-appeal {
+  width: 600px;
 }
 
 main {
-  flex: 1;
   display: flex;
-  flex-direction: row;
+  flex: 1;
+  gap: 10px;
 }
 
-#leftpanel {
-  width: 20%;
+.about-city {
+  flex: 1;
+  padding: 0 20px;
+  border-radius: 15px;
   text-align: center;
+  align-content: center;
   background-color: #b2c6b6;
-}
-
-#leftpanel p {
-  margin: 10px;
-  margin-top: 20px;
 }
 
 .center {
   display: flex;
   flex-direction: column;
+  flex: 5;
+  gap: 10px;
 }
 
-nav {
-  width: 100%;
-  height: 30px;
-  line-height: 30px;
+.site-nav {
+  display: flex;
+  gap: 10px;
+  padding: 5px 10px;
+  border-radius: 15px;
   background-color: #e8ecd6;
+}
+
+.site-nav a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+.site-nav a:visited {
+  color: #000;
+}
+
+.site-nav a:hover {
+  color: #b75a48;
 }
 
 .core {
   display: flex;
-  min-height: 100vh;
+  flex: 1;
+  gap: 10px;
 }
 
-#rightpanel {
-  width: 15vw;
-  background-color: #b2c6b6;
-}
-
-#rightpanel p {
-  margin-left: 10px;
-}
-
-#photopanel {
-  width: 70vw;
+.image-panel {
+  flex: 3;
   align-content: center;
 }
 
-h2 {
-  background-color: #e8ecd6;
-  margin: 20px;
-}
-
-a {
-  margin-left: 10px;
-}
-
-a:link,
-a:visited {
-  color: black;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #b75a48;
-}
-
-img {
+.main-image {
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.top-sights {
+  flex: 1;
+  padding: 0 20px;
+  border-radius: 15px;
+  text-align: center;
+  align-content: center;
+  background-color: #b2c6b6;
 }
 
 footer {
-  width: 100%;
-  height: 100px;
   display: flex;
-  align-items: center;
+  padding: 20px;
+  border-radius: 15px 15px 0 0;
   background-color: #b75a48;
+  text-align: center;
+  justify-content: space-between;
+}
+
+#y {
+  width: 200px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #e8ecd6;
+}
+
+.footer-appeal {
+  width: 600px;
 }
