@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Web Development</title>
     <link rel="stylesheet" href="style.css" />
     <base href="https://s0wime.github.io/WebDev/" />
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <h1 class="site-headline">Web Development</h1>
+      <p class="site-desc">My programming homeworks.</p>
+    </header>
 
-<header>
-    <h1>Web Development</h1>
-    <p>My programming homeworks.</p>
-</header>
-
-<main>
-    <section class="homeworks">
+    <main>
+      <section class="homeworks">
         <div class="hw-section">
-            <h1>Homework 1</h1>
-            <p>In this homework, positioning through float is implemented.</p>
-            <button class="button button_outline" type="button" onclick="window.location.href = 'homework 1/src/uk.html'">View</button>
+          <h1 class="hw-name">Homework 1</h1>
+          <p class="hw-desc">
+            In this homework, positioning through float is implemented.
+          </p>
+          <button
+            class="button button_outline hw-button"
+            type="button"
+            onclick="window.location.href = 'homework 1/src/uk.html'"
+          >
+            View
+          </button>
         </div>
 
         <div class="hw-section">
-            <h1>Homework 2</h1>
-            <p>In this homework, positioning is implemented using float, grid, and flexbox.</p>
-            <button class="button button_outline" type="button" onclick="window.location.href = 'homework 2/src/float-layout/index.html'">View</button>
+          <h1 class="hw-name">Homework 2</h1>
+          <p class="hw-desc">
+            In this homework, positioning is implemented using float, grid, and
+            flexbox.
+          </p>
+          <button
+            class="button button_outline hw-button"
+            type="button"
+            onclick="window.location.href = 'homework 2/src/float-layout/index.html'"
+          >
+            View
+          </button>
         </div>
-        
+
         <div class="hw-section">
-            <h1>Homework 3</h1>
-            <p>There is no information.</p>
-            <button class="button button_outline" type="button" onclick="window.location.href = 'homework 3/src/index.html'">View</button>
+          <h1 class="hw-name">Homework 3</h1>
+          <p class="hw-desc">There is no information.</p>
+          <button
+            class="button button_outline hw-button"
+            type="button"
+            onclick="window.location.href = 'homework 3/src/index.html'"
+          >
+            View
+          </button>
         </div>
-    </section>
-</main>
+      </section>
+    </main>
 
-<footer>
-    <p>© 2024</p>
-</footer>
-
-</body>
+    <footer>
+      <p class="footer-info">© 2024</p>
+    </footer>
+  </body>
 </html>
