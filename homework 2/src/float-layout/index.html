@@ -2,73 +2,74 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
-    <title>Homework 2</title>
+    <title>Homework 2 | Floats</title>
   </head>
   <body>
-    <div id="header">
-      <div id="x">
-        <h2>New York</h2>
+    <div class="main-container">
+      <div class="header">
+        <div id="x">
+          <h2>New York</h2>
+        </div>
+
+        <p class="header-appeal">
+          Explore the iconic landmarks of New York City on unforgettable
+          sightseeing tours that showcase the vibrant culture and history of the
+          Big Apple.
+        </p>
       </div>
 
-      <p>
-        Explore the iconic landmarks of New York City on unforgettable
-        sightseeing tours that showcase the vibrant culture and history of the
-        Big Apple.
-      </p>
-    </div>
+      <div class="about-city">
+        <p class="about-city-text">
+          The beauty of New York City's landmarks is truly mesmerizing, with
+          each iconic structure telling its own unique story. From the towering
+          skyline to the serene parks, every sight captures the vibrant energy
+          and rich history of the city.
+        </p>
+      </div>
 
-    <div id="leftpanel">
-      <p>
-        The beauty of New York City's landmarks is truly mesmerizing, with each
-        iconic structure telling its own unique story. From the towering skyline
-        to the serene parks, every sight captures the vibrant energy and rich
-        history of the city.
-      </p>
-    </div>
+      <nav class="site-nav">
+        <a href="index.html">Float positioning</a>
+        <a href="../grid-layout/index.html">Grid positioning</a>
+        <a href="../flexbox-layout/index.html">Flexbox positioning</a>
+      </nav>
 
-    <nav>
-      <a href="index.html">Float positioning</a>
-      <a href="../grid-layout/index.html">Grid positioning</a>
-      <a href="../flexbox-layout/index.html">Flexbox positioning</a>
-    </nav>
-
-    <div id="centerpanel">
-      <img src="../images/mainphoto.webp" alt="sights" usemap="#sight" />
-      <map name="sight">
-        <area
-          shape="rect"
-          coords="0,0,430,1080"
-          href="https://en.wikipedia.org/wiki/Central_Park"
-          target="_blank"
+      <div class="image-panel">
+        <img
+          src="../images/Central_Park.webp"
+          alt="Central Park and the Statue of Liberty"
+          usemap="#sight"
+          class="main-image"
         />
-        <area
-          shape="rect"
-          coords="430,0,1080,1080"
-          href="https://en.wikipedia.org/wiki/Statue_of_Liberty"
-          target="_blank"
-        />
-      </map>
-    </div>
+        <map name="sight">
+          <area
+            shape="rect"
+            coords="0,0,1080,1080"
+            href="https://en.wikipedia.org/wiki/Central_Park"
+            target="_blank"
+          />
+        </map>
+      </div>
 
-    <div id="rightpanel">
-      <p>Top 5 sights:</p>
-      <ol>
-        <li>Statue of Liberty</li>
-        <li>Central Park</li>
-        <li>Empire State Building</li>
-        <li>Times Square</li>
-        <li>Metropolitan Museum of Art</li>
-      </ol>
-    </div>
+      <div class="top-sights">
+        <p class="top-sights-header">Top 5 sights:</p>
+        <ol class="top-sights-list">
+          <li>Statue of Liberty</li>
+          <li>Central Park</li>
+          <li>Empire State Building</li>
+          <li>Times Square</li>
+          <li>Metropolitan Museum of Art</li>
+        </ol>
+      </div>
 
-    <div id="footer">
-      <p>
-        Discover the magic of New York City—book your sightseeing tour today and
-        experience its iconic landmarks like never before!
-      </p>
+      <div class="footer">
+        <p class="footer-appeal">
+          Discover the magic of New York City—book your sightseeing tour today
+          and experience its iconic landmarks like never before!
+        </p>
 
-      <div id="y">
-        <h2>Choose us!</h2>
+        <div id="y">
+          <h2>Choose us!</h2>
+        </div>
       </div>
     </div>
   </body>

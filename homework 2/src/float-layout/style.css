@@ -1,110 +1,112 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#header,
-#footer {
-  width: 100%;
-  height: 15vh;
-  text-align: center;
+.main-container {
+  width: 1200px;
+  margin: auto auto;
+}
+
+.header {
+  float: left;
+  width: 1200px;
+  padding: 30px;
+  margin-bottom: 20px;
   background-color: #b75a48;
-}
-
-#header p {
-  width: 60%;
-  margin-top: 25px;
-  margin-right: 35px;
-  float: right;
+  text-align: center;
 }
 
 #x {
-  margin-top: 25px;
-  margin-left: 35px;
+  float: left;
+  width: 200px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
   background-color: #e8ecd6;
-  float: left;
 }
 
-#footer {
-  float: left;
-}
-
-#footer p {
-  width: 60%;
-  margin-top: 25px;
-  margin-left: 35px;
-  float: left;
-}
-
-#y {
-  margin-top: 25px;
-  margin-right: 35px;
-  background-color: #e8ecd6;
+.header-appeal {
   float: right;
+  width: 600px;
 }
 
-#leftpanel,
-#rightpanel {
-  width: 20%;
-  height: 70vh;
+.about-city {
+  float: left;
+  width: 300px;
+  padding: 140px 40px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   text-align: center;
   background-color: #b2c6b6;
+}
+
+.site-nav {
   float: left;
-}
-
-#leftpanel p,
-#rightpanel p {
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-#rightpanel {
-  height: 65vh;
-  text-align: start;
-  float: left;
-}
-
-#rightpanel li {
-  margin-left: 20px;
-}
-
-nav {
-  width: 80%;
-  height: 5vh;
-
-  line-height: 5vh;
-
+  width: 880px;
+  padding: 5px;
+  margin-bottom: 20px;
   background-color: #e8ecd6;
-  float: left;
 }
 
-nav p {
-  margin-left: 10px;
-}
-
-#centerpanel {
-  width: 60%;
-  height: 65vh;
-  background-color: lightgray;
-  float: left;
-}
-
-#centerpanel img {
-  height: 100%;
-  width: 100%;
-}
-
-a {
-  margin-left: 10px;
-}
-
-a:link,
-a:visited {
-  color: black;
+.site-nav a:link {
+  margin-right: 10px;
+  color: #000;
   text-decoration: none;
 }
 
-a:hover {
+.site-nav a:visited {
+  color: #000;
+}
+
+.site-nav a:hover {
   color: #b75a48;
+}
+
+.site-nav a:last-child {
+  margin-right: 0;
+}
+
+.image-panel {
+  float: left;
+  width: 560px;
+  margin-right: 20px;
+  padding: 20px 0;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+}
+
+.top-sights {
+  float: left;
+  width: 300px;
+  padding: 140px 40px;
+  text-align: center;
+  background-color: #b2c6b6;
+}
+
+.footer {
+  float: left;
+  width: 1200px;
+  padding: 30px;
+  background-color: #b75a48;
+  text-align: center;
+}
+
+#y {
+  float: right;
+  width: 200px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #e8ecd6;
+}
+
+.footer-appeal {
+  float: left;
+  width: 600px;
 }
