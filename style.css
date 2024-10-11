@@ -1,84 +1,107 @@
+/* 
+MAIN COLOR - #364fc7
+GREY COLOR - #343a40
+*/
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #343a40;
+}
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 0;
-  gap: 10px;
-  align-items: center;
-  color: white;
-  background-color: #212529;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  margin-top: 48px;
+  margin-bottom: 128px;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding: 50px 0;
+img {
+  border-radius: 12px;
+  box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.08);
+  width: 100%;
 }
 
-.homeworks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+.header-text {
+  align-self: center;
 }
 
-.hw-section {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 350px;
-  padding: 15px 30px;
-  border: 2px solid black;
-  border-radius: 15px;
-  text-align: center;
-  justify-content: space-between;
-  align-items: center;
+.site-headline {
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 24px;
 }
 
-.button {
-  padding: 10px 70px;
-  font-size: 1.1rem;
-
-  border-radius: 15px;
-  background-color: #212529;
-
-  user-select: none;
-  cursor: pointer;
-  border: 1px solid #6c757d;
-
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+.site-desc {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #495057;
 }
 
-.button_outline {
-  color: #6c757d;
-  border-color: #6c757d;
+.homeworks-headline {
+  font-size: 36px;
+  margin-bottom: 48px;
 }
 
-.button_outline:hover {
-  background-color: #6c757d;
-  color: white;
-  border-color: #6c757d;
+.homework-figures {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  margin-bottom: 128px;
+}
+
+.hw-figure {
+  padding: 24px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+.hw-name {
+  font-size: 30px;
+  margin-bottom: 32px;
+}
+
+.hw-desc {
+  font-size: 20px;
+  margin-bottom: 32px;
+  color: #495057;
+}
+
+.hw-button:link,
+.hw-button:visited {
+  display: inline-block;
+  background-color: #364fc7;
+  color: #fff;
+  padding: 16px 32px;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 100px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.hw-button:hover {
+  background-color: #3b5bdb;
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 0;
-  align-items: center;
-  color: white;
-  background-color: #212529;
+  color: #868e96;
+  font-size: 14px;
+  margin-bottom: 48px;
+  align-self: end;
 }

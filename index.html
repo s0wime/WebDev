@@ -3,62 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <title>Web Development</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
-    <base href="https://s0wime.github.io/WebDev/" />
+    <!-- <base href="https://s0wime.github.io/WebDev/" /> -->
   </head>
   <body>
-    <header>
-      <h1 class="site-headline">Web Development</h1>
-      <p class="site-desc">My programming homeworks.</p>
-    </header>
-
-    <main>
-      <section class="homeworks">
-        <div class="hw-section">
-          <h2 class="hw-name">Homework 1</h2>
-          <p class="hw-desc">
-            In this homework, positioning through float is implemented.
+    <div class="container">
+      <header>
+        <div class="header-text">
+          <h1 class="site-headline">Web Development</h1>
+          <p class="site-desc">
+            All my web programming homework is collected here. You can interact
+            with them below.
           </p>
-          <button
-            class="button button_outline hw-button"
-            type="button"
-            onclick="window.location.href = 'homework 1/src/uk.html'"
-          >
-            View
-          </button>
         </div>
+        <img
+          src="images/header-img.jpg"
+          alt="Java Script code on a screen"
+          class="header-image"
+        />
+      </header>
 
-        <div class="hw-section">
-          <h2 class="hw-name">Homework 2</h2>
-          <p class="hw-desc">
-            In this homework, positioning is implemented using float, grid, and
-            flexbox.
-          </p>
-          <button
-            class="button button_outline hw-button"
-            type="button"
-            onclick="window.location.href = 'homework 2/src/float-layout/index.html'"
-          >
-            View
-          </button>
-        </div>
+      <main>
+        <section class="homeworks">
+          <h2 class="homeworks-headline">My homeworks</h2>
+          <div class="homework-figures">
+            <figure class="hw-figure">
+              <h3 class="hw-name">Homework 1</h3>
+              <p class="hw-desc">
+                In this homework, you had to realize positioning in any way and
+                duplicate it up to 5 instances. I used float positioning.
+              </p>
+              <a href="homework 1/src/uk.html" class="hw-button">View</a>
+            </figure>
 
-        <div class="hw-section">
-          <h2 class="hw-name">Homework 3</h2>
-          <p class="hw-desc">There is no information.</p>
-          <button
-            class="button button_outline hw-button"
-            type="button"
-            onclick="window.location.href = 'homework 3/src/index.html'"
-          >
-            View
-          </button>
-        </div>
-      </section>
-    </main>
+            <figure class="hw-figure">
+              <h3 class="hw-name">Homework 2</h3>
+              <p class="hw-desc">
+                In this homework, we had to implement positioning using float,
+                css-grid and flexbox. I also tested the map on the main picture.
+              </p>
+              <a href="homework 2/src/float-layout/index.html" class="hw-button"
+                >View</a
+              >
+            </figure>
 
-    <footer>
-      <p class="footer-info">© 2024</p>
-    </footer>
+            <figure class="hw-figure">
+              <h3 class="hw-name">Homework 3</h3>
+              <p class="hw-desc">
+                In this homework, you had to collapse a web page for an email.
+                It was also necessary to adapt the homepage for mobile devices.
+              </p>
+              <a href="homework 3/src/index.html" class="hw-button">View</a>
+            </figure>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p class="footer-info">
+          Copyright &copy;2024. Use for informational purposes.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
