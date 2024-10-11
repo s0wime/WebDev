@@ -105,3 +105,19 @@ footer {
   margin-bottom: 48px;
   align-self: end;
 }
+
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+
+  .homework-figures {
+    grid-template-columns: 1fr;
+  }
+
+  .homeworks-headline {
+    font-size: 36px;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+}
