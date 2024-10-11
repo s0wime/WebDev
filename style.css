@@ -103,21 +103,45 @@ footer {
   color: #868e96;
   font-size: 14px;
   margin-bottom: 48px;
-  align-self: end;
 }
 
 @media (max-width: 768px) {
-  header {
-    grid-template-columns: 1fr;
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
   }
 
-  .homework-figures {
+  header {
     grid-template-columns: 1fr;
+    row-gap: 48px;
+  }
+
+  .header-text {
+    padding: 0 24px;
+  }
+
+  img {
+    width: 90%;
+    justify-self: center;
   }
 
   .homeworks-headline {
     font-size: 36px;
     margin-bottom: 48px;
     text-align: center;
+  }
+
+  .homework-figures {
+    grid-template-columns: 1fr;
+  }
+
+  .hw-figure {
+    padding: 32px 24px;
+    margin: 0 24px;
+  }
+
+  footer {
+    padding: 0 24px;
   }
 }
