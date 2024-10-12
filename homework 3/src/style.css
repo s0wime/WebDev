@@ -153,6 +153,7 @@ img {
   color: #fff;
   border: 0;
   background-color: #364fc7;
+  transition: background-color 0.15s ease-in-out;
 }
 
 .btn:hover {
@@ -178,4 +179,74 @@ footer {
   font-size: 14px;
   color: #868e96;
   margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: auto;
+  }
+
+  header {
+    margin-bottom: 96px;
+  }
+
+  .header-box {
+    grid-template-columns: 1fr;
+    row-gap: 64px;
+  }
+
+  .header-textbox {
+    margin: 0 24px;
+  }
+
+  img {
+    justify-self: center;
+    width: 90%;
+  }
+
+  .center-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    margin-bottom: 96px;
+  }
+
+  .page-info {
+    grid-column: unset;
+    grid-row: 1;
+    padding: 0 24px;
+    margin-bottom: 64px;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  .article-headline {
+    grid-column: unset;
+    grid-row: 2;
+    font-size: 30px;
+    padding: 0 24px;
+    margin-bottom: 32px;
+  }
+
+  .form {
+    grid-column: unset;
+    grid-row: 3;
+    width: 90%;
+    margin-bottom: 64px;
+  }
+
+  .article-text {
+    grid-column: unset;
+    grid-row: 4;
+    padding: 0 24px;
+  }
+
+  footer {
+    padding: 0 24px;
+  }
 }
