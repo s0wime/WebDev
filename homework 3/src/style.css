@@ -187,7 +187,7 @@ footer {
   }
 
   header {
-    margin-bottom: 96px;
+    margin-bottom: 128px;
   }
 
   .header-box {
@@ -207,14 +207,14 @@ footer {
   .center-box {
     grid-template-columns: 1fr;
     grid-template-rows: none;
-    margin-bottom: 96px;
+    margin-bottom: 128px;
   }
 
   .page-info {
     grid-column: unset;
     grid-row: 1;
     padding: 0 24px;
-    margin-bottom: 64px;
+    margin-bottom: 80px;
   }
 
   #desktop {
@@ -237,7 +237,7 @@ footer {
     grid-column: unset;
     grid-row: 3;
     width: 90%;
-    margin-bottom: 64px;
+    margin-bottom: 80px;
   }
 
   .article-text {
