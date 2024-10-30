@@ -104,10 +104,10 @@ img {
 }
 
 .article-headline {
-  grid-column: 2;
+  grid-column: 2 / -1;
   grid-row: 1;
-  justify-self: center;
-  font-size: 36px;
+  padding-left: 56px;
+  font-size: 28px;
 }
 
 .form {
@@ -176,9 +176,16 @@ img {
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
   font-size: 14px;
   color: #868e96;
   margin-bottom: 32px;
+}
+
+.footer-heading {
+  color: #fff;
+  font-size: 22px;
 }
 
 @media (max-width: 768px) {
