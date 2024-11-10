@@ -92,7 +92,7 @@ img {
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 100px;
-  transition: background-color 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .hw-button:hover,
