@@ -95,8 +95,24 @@ img {
   transition: background-color 0.15s ease-in-out;
 }
 
-.hw-button:hover {
+.hw-button:hover,
+.hw-button:active {
   background-color: #3b5bdb;
+}
+
+.hw-button--email:link,
+.hw-button--email:visited {
+  background-color: #fff;
+  color: #364fc7;
+  margin-left: 12px;
+  box-shadow: inset 0px 0px 0px 5px #364fc7;
+}
+
+.hw-button--email:hover,
+.hw-button--email:active {
+  background-color: #3b5bdb;
+  color: #fff;
+  box-shadow: none;
 }
 
 footer {
