@@ -16,9 +16,8 @@ body {
 }
 
 .container {
-  width: 980px;
+  width: 1200px;
   margin: 0 auto;
-  scroll-behavior: smooth;
 }
 
 header {
@@ -60,6 +59,7 @@ img {
 .homework-figures {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding: 0 32px;
   gap: 80px;
   margin-bottom: 128px;
 }
