@@ -1,5 +1,50 @@
+/* #099268 */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  border: none;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  /* flex-shrink: 1; */
+  justify-content: space-between;
+  padding: 24px 80px;
+  background-color: #fff;
+}
+
+.btn--menu {
+  background-color: #fff;
+}
+
+.search-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.search-bar {
+  display: inline-block;
+  padding: 12px;
+}
+
+.main {
+  flex: 1;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  color: #fff;
 }
