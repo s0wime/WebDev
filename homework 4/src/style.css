@@ -118,3 +118,35 @@ body {
 .btn--feature-plate:active {
   background-color: #339af0;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+  background-color: #fff;
+}
+
+.logo {
+  font-size: 30px;
+  color: #868e96;
+}
+
+.site-nav {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+}
+
+.btn--nav:link,
+.btn--nav:visited {
+  font-size: 14px;
+  color: #1c7ed6;
+  transition: all 0.3s;
+}
+
+.btn--nav:hover,
+.btn--nav:active {
+  color: #1864ab;
+  border-bottom: 1px solid #1864ab;
+}
