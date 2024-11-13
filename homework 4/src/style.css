@@ -168,7 +168,7 @@ body {
 
   .features {
     grid-template-columns: 1fr;
-    padding: 48px;
+    padding: 48px 12px;
   }
 
   .footer {
