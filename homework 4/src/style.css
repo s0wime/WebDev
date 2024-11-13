@@ -58,6 +58,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 .about {
@@ -149,4 +150,33 @@ body {
 .btn--nav:active {
   color: #1864ab;
   border-bottom: 1px solid #1864ab;
+}
+
+@media (max-width: 800px) {
+  .header,
+  .footer {
+    padding: 24px 32px;
+  }
+
+  .container {
+    padding: 0 48px;
+  }
+
+  .about {
+    margin-bottom: 32px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    padding: 48px;
+  }
+
+  .footer {
+    gap: 128px;
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
