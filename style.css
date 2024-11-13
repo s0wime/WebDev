@@ -149,11 +149,13 @@ footer {
   }
 
   .homework-figures {
+    padding: 0 96px;
     grid-template-columns: 1fr;
+    column-gap: 48px;
   }
 
   .hw-figure {
-    margin: 0 24px;
+    padding: 48px;
   }
 
   footer {
