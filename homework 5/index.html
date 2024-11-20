@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header">
-      <div class="swap-box">
+      <div class="swap-box swap-box--header">
         <h2 class="heading">Work with JS</h2>
       </div>
       <p class="header-text">
@@ -17,45 +23,53 @@
       </p>
     </header>
     <main class="main">
-      <aside class="aside">
-        <p class="aside-text">
-          In this home work I going to work with JS. I'll implement
-          manipulations with DOM and work with cookies.
-        </p>
-      </aside>
-      <nav class="site-nav">
-        <ul class="site-nav-list">
-          <li><a href="../index.html" class="btn">Home</a></li>
-          <li><a href="#" class="btn">JavaScript</a></li>
-        </ul>
-      </nav>
-      <div class="center-box">
-        <form action="" class="form">
-          <h4 class="form-heading">
-            Enter 10 numbers and it will show you the maximum.
-          </h4>
-          <div class="form-inputs">
-            <input type="number" class="input-number input-number--1" />
-            <input type="number" class="input-number input-number--2" />
-            <input type="number" class="input-number input-number--3" />
-            <input type="number" class="input-number input-number--4" />
-            <input type="number" class="input-number input-number--5" />
-            <input type="number" class="input-number input-number--6" />
-            <input type="number" class="input-number input-number--7" />
-            <input type="number" class="input-number input-number--8" />
-            <input type="number" class="input-number input-number--9" />
-            <input type="number" class="input-number input-number--10" />
-          </div>
-        </form>
-      </div>
-      <div class="bold-text-box">
-        <h3 class="bold-text-heading">
-          Try focusing on this block to make all the text in it bold.
-        </h3>
-        <p class="bold-text-text">
-          Bold text bold text bold text bold text bold text bold text bold text
-          bold text bold text bold text bold text.
-        </p>
+      <div class="main-container">
+        <aside class="aside">
+          <p class="aside-text">
+            In this home work I'm going to work with JS. I'll implement
+            manipulations with DOM and work with cookies.
+          </p>
+        </aside>
+        <nav class="site-nav">
+          <ul class="site-nav-list">
+            <li><a href="../index.html" class="btn">Home</a></li>
+            <li>
+              <a href="../homework 4/src/index.html" class="btn"
+                >Previous homework</a
+              >
+            </li>
+            <li><a href="#" class="btn">JavaScript</a></li>
+          </ul>
+        </nav>
+        <div class="center-box">
+          <form action="" class="form">
+            <h4 class="form-heading">
+              Enter 10 numbers and it will show you the maximum.
+            </h4>
+            <div class="form-inputs">
+              <input type="number" class="input-number input-number--1" />
+              <input type="number" class="input-number input-number--2" />
+              <input type="number" class="input-number input-number--3" />
+              <input type="number" class="input-number input-number--4" />
+              <input type="number" class="input-number input-number--5" />
+              <input type="number" class="input-number input-number--6" />
+              <input type="number" class="input-number input-number--7" />
+              <input type="number" class="input-number input-number--8" />
+              <input type="number" class="input-number input-number--9" />
+              <input type="number" class="input-number input-number--10" />
+            </div>
+            <button class="btn btn--calculate-max">Calculate</button>
+          </form>
+        </div>
+        <div class="bold-text-box">
+          <h3 class="bold-text-heading">
+            Try focusing on this block to make all the text in it bold.
+          </h3>
+          <p class="bold-text-text">
+            Bold text bold text bold text bold text bold text bold text bold
+            text bold text bold text bold text bold text.
+          </p>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -64,7 +78,7 @@
         corporis eum ab, quibusdam veniam labore repellendus autem sunt fugit
         incidunt ratione error.
       </p>
-      <div class="swap-box">
+      <div class="swap-box swap-box--footer">
         <h2 class="heading">is really interesting.</h2>
       </div>
     </footer>
