@@ -2,18 +2,84 @@
 
 const btnCalculateMinMax = document.querySelector(".btn--calculate-min-max");
 const checkBoxBoldText = document.getElementById("bold-text-checkbox");
-const calculateTextEl = document.querySelector(".calculate-text");
+const rectAreaResultEl = document.querySelector(".rect-area-result");
 const maxResultEl = document.querySelector(".calculate-max-result");
 const minResultEl = document.querySelector(".calculate-min-result");
+const calculateTextEl = document.querySelector(".calculate-text");
+const headingHeaderEl = document.querySelector(".heading-header");
+const headingFooterEl = document.querySelector(".heading-footer");
+const boldTextBoxEl = document.querySelector(".bold-text-box");
 const calculationFormEL = document.querySelector(".form");
 const formErrorEl = document.querySelector(".form-error");
 
-const headingHeaderEl = document.querySelector(".heading-header");
-const headingFooterEl = document.querySelector(".heading-footer");
+const asideTableInputEl = document.querySelector(".aside-table-input");
+const asideTableEl = document.querySelector(".aside-table");
+const btnSaveTable = document.querySelector(".btn--save-table");
+const btnLoadTable = document.querySelector(".btn--load-table");
 
-const rectAreaResultEl = document.querySelector(".rect-area-result");
+function loadTable() {
+  const localStorageInfo = localStorage.getItem("tableValues");
 
-const boldTextBoxEl = document.querySelector(".bold-text-box");
+  if (!localStorageInfo) {
+    return;
+  }
+
+  const tableValues = JSON.parse(localStorageInfo);
+
+  for (let i = 0; i < tableValues.length; i++) {
+    addRow(tableValues[i]);
+  }
+}
+
+function saveTable() {
+  const cells = document.querySelectorAll(".aside-table-cell");
+  const values = [];
+
+  for (let i = 0; i < cells.length; i++) {
+    values.push(cells[i].textContent);
+  }
+
+  localStorage.setItem("tableValues", JSON.stringify(values));
+}
+
+function editCell(cell) {
+  const currentText = cell.textContent.trim();
+  const input = document.createElement("input");
+  input.type = "text";
+  input.value = currentText;
+  input.onblur = function () {
+    cell.textContent = input.value.trim() || currentText;
+  };
+
+  cell.innerHTML = "";
+  cell.appendChild(input);
+
+  input.focus();
+}
+
+function addRow(value) {
+  if (!value) {
+    return;
+  }
+
+  const newRow = asideTableEl.insertRow(asideTableEl.rows.length - 1);
+  const newCell = newRow.insertCell(0);
+  newCell.classList.add("aside-table-cell");
+  newCell.textContent = value;
+  newCell.setAttribute("onclick", "editCell(this)");
+}
+
+function addRowFromInput() {
+  if (asideTableInputEl.value.trim() !== "") {
+    const newRow = asideTableEl.insertRow(asideTableEl.rows.length - 1);
+    const newCell = newRow.insertCell(0);
+    newCell.classList.add("aside-table-cell");
+    newCell.textContent = asideTableInputEl.value.trim();
+    newCell.setAttribute("onclick", "editCell(this)");
+  }
+
+  asideTableInputEl.value = "";
+}
 
 function swapContent() {
   const temp = headingHeaderEl.textContent;
@@ -79,6 +145,14 @@ function setBoldText() {
     boldTextBoxEl.style.fontWeight = boldTextValue;
   }
 }
+
+btnLoadTable.addEventListener("click", function () {
+  loadTable();
+});
+
+btnSaveTable.addEventListener("click", function () {
+  saveTable();
+});
 
 boldTextBoxEl.addEventListener("focus", function () {
   if (checkBoxBoldText.checked) {

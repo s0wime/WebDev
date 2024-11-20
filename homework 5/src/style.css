@@ -59,10 +59,49 @@ body {
 
 .aside {
   grid-row: 1 / -1;
+  max-height: 500px;
+  overflow: auto;
+}
+
+.aside-table-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
 }
 
 .aside-text {
   font-size: 18px;
+  margin-bottom: 36px;
+}
+
+.aside-table tr td,
+.aside-table {
+  text-align: center;
+  border: 1px solid #f8f9fa;
+  border-collapse: collapse;
+  padding: 6px 8px;
+}
+
+.aside-table-input {
+  transform: scale(1.1);
+  width: 100%;
+}
+
+.btn--save-table,
+.btn--load-table {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  flex-grow: 0;
+  background-color: #fff;
+}
+
+.btn--save-table:hover,
+.btn--save-table:active,
+.btn--load-table:hover,
+.btn--load-table:active {
+  background-color: #f8f9fa;
 }
 
 .site-nav {
@@ -94,6 +133,8 @@ body {
 }
 
 .btn--calculate-min-max {
+  font-weight: 700;
+  text-transform: uppercase;
   background-color: #55adb4;
   padding: 12px 36px;
   color: #f8f9fa;
