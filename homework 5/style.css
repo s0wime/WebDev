@@ -84,14 +84,14 @@ body {
   color: #0b5b5a;
 }
 
-.btn--calculate-max {
+.btn--calculate-min-max {
   background-color: #55adb4;
   padding: 12px 36px;
   color: #f8f9fa;
 }
 
-.btn--calculate-max:hover,
-.btn--calculate-max:active {
+.btn--calculate-min-max:hover,
+.btn--calculate-min-max:active {
   color: #0b5b5a;
   background-color: #fff;
   box-shadow: inset 0 0 0 3px #0b5b5a;
