@@ -11,7 +11,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .header,
@@ -131,6 +131,12 @@ body {
 .calculate-text {
   color: #16bdb9;
   font-weight: 600;
+}
+
+.form-error {
+  text-align: center;
+  font-weight: 600;
+  color: red;
 }
 
 .rect-area {
