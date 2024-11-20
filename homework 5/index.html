@@ -47,6 +47,7 @@
               Enter 10 numbers and it will show you the maximum.
             </h4>
             <div class="form-inputs">
+              <input type="number" class="input-number input-number--0" />
               <input type="number" class="input-number input-number--1" />
               <input type="number" class="input-number input-number--2" />
               <input type="number" class="input-number input-number--3" />
@@ -56,9 +57,13 @@
               <input type="number" class="input-number input-number--7" />
               <input type="number" class="input-number input-number--8" />
               <input type="number" class="input-number input-number--9" />
-              <input type="number" class="input-number input-number--10" />
             </div>
-            <button class="btn btn--calculate-max">Calculate</button>
+            <p class="calculate-text hidden">
+              Maximum number: <span class="calculate-max-result">0</span>
+            </p>
+            <button class="btn btn--calculate-max" type="button">
+              Calculate
+            </button>
           </form>
         </div>
         <div class="bold-text-box">
@@ -82,5 +87,7 @@
         <h2 class="heading">is really interesting.</h2>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -10,6 +10,10 @@ body {
   color: #f8f9fa;
 }
 
+.hidden {
+  display: none;
+}
+
 .header,
 .footer {
   display: flex;
@@ -122,6 +126,11 @@ body {
   display: block;
   border: 1px solid #adb5bd;
   padding: 12px;
+}
+
+.calculate-text {
+  color: #16bdb9;
+  font-weight: 600;
 }
 
 .bold-text-heading {
