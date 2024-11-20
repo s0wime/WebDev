@@ -8,6 +8,9 @@ body {
   font-family: "Rubik", serif;
   font-weight: 400;
   color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .hidden {
@@ -30,6 +33,12 @@ body {
 
 .header-text {
   font-size: 20px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .main-container {
