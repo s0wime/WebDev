@@ -133,6 +133,10 @@ body {
   font-weight: 600;
 }
 
+.rect-area {
+  color: #16bdb9;
+}
+
 .bold-text-heading {
   font-size: 20px;
   margin-bottom: 24px;
