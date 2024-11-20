@@ -58,6 +58,12 @@
               <input type="number" class="input-number input-number--8" />
               <input type="number" class="input-number input-number--9" />
             </div>
+            <div class="form-bold-text">
+              <input type="checkbox" id="bold-text-checkbox" />
+              <label for="bold-text-checkbox" class="bold-text-checkbox-label"
+                >Make text bold in the right block (when focus).</label
+              >
+            </div>
             <p class="calculate-text hidden">
               Maximum number:
               <span class="calculate-max-result">0</span>; Minimum number:
@@ -73,7 +79,7 @@
           </form>
           <p class="form-error hidden">Form is temporarily unavailable 😔</p>
         </div>
-        <div class="bold-text-box">
+        <div class="bold-text-box" tabindex="0">
           <h3 class="bold-text-heading">
             Try focusing on this block to make all the text in it bold.
           </h3>

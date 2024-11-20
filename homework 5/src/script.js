@@ -1,6 +1,7 @@
 "use strict";
 
 const btnCalculateMinMax = document.querySelector(".btn--calculate-min-max");
+const checkBoxBoldText = document.getElementById("bold-text-checkbox");
 const calculateTextEl = document.querySelector(".calculate-text");
 const maxResultEl = document.querySelector(".calculate-max-result");
 const minResultEl = document.querySelector(".calculate-min-result");
@@ -11,6 +12,8 @@ const headingHeaderEl = document.querySelector(".heading-header");
 const headingFooterEl = document.querySelector(".heading-footer");
 
 const rectAreaResultEl = document.querySelector(".rect-area-result");
+
+const boldTextBoxEl = document.querySelector(".bold-text-box");
 
 function swapContent() {
   const temp = headingHeaderEl.textContent;
@@ -70,6 +73,28 @@ function handleCookiesPresence() {
   formErrorEl.classList.remove("hidden");
 }
 
+function setBoldText() {
+  const boldTextValue = localStorage.getItem("boldText");
+  if (boldTextValue) {
+    boldTextBoxEl.style.fontWeight = boldTextValue;
+  }
+}
+
+boldTextBoxEl.addEventListener("focus", function () {
+  if (checkBoxBoldText.checked) {
+    boldTextBoxEl.style.fontWeight = "700";
+    localStorage.setItem("boldText", "700");
+  }
+});
+
+boldTextBoxEl.addEventListener("blur", function (e) {
+  if (e.rangeOffset === 0) {
+    return;
+  }
+  boldTextBoxEl.style.fontWeight = "400";
+  localStorage.setItem("boldText", "400");
+});
+
 btnCalculateMinMax.addEventListener("click", function () {
   const currentNumber = Number(
     document.querySelector(`.input-number--${0}`).value
@@ -95,5 +120,6 @@ btnCalculateMinMax.addEventListener("click", function () {
 });
 
 askAboutCookies();
+setBoldText();
 swapContent();
 rectAreaResultEl.textContent = calcRectArea(8, 5);
