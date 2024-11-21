@@ -16,6 +16,7 @@ const asideTableInputEl = document.querySelector(".aside-table-input");
 const asideTableEl = document.querySelector(".aside-table");
 const btnSaveTable = document.querySelector(".btn--save-table");
 const btnLoadTable = document.querySelector(".btn--load-table");
+const btnCreateTable = document.querySelector(".btn--aside-table-create");
 
 function loadTable() {
   const localStorageInfo = localStorage.getItem("tableValues");
@@ -25,6 +26,12 @@ function loadTable() {
   }
 
   const tableValues = JSON.parse(localStorageInfo);
+
+  const cells = document.querySelectorAll(".aside-table-cell");
+
+  for (let i = 0; i < cells.length; i++) {
+    cells[i].remove();
+  }
 
   for (let i = 0; i < tableValues.length; i++) {
     addRow(tableValues[i]);
@@ -145,6 +152,18 @@ function setBoldText() {
     boldTextBoxEl.style.fontWeight = boldTextValue;
   }
 }
+
+btnCreateTable.addEventListener("click", function () {
+  const tableRows = Number(
+    document.querySelector(".aside-table-init-value").value
+  );
+  document.querySelector(".aside-table-setting").classList.remove("hidden");
+  document.querySelector(".aside-table-init").classList.add("hidden");
+
+  for (let i = 0; i < tableRows; i++) {
+    addRow(`${i + 1}`);
+  }
+});
 
 btnLoadTable.addEventListener("click", function () {
   loadTable();

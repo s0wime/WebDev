@@ -30,19 +30,31 @@
             manipulations with DOM and work with cookies.
           </p>
           <div class="aside-table-box">
-            <table class="aside-table">
-              <tr>
-                <td>
-                  <input
-                    type="text"
-                    class="aside-table-input"
-                    onblur="addRowFromInput()"
-                  />
-                </td>
-              </tr>
-            </table>
-            <button class="btn btn--save-table">Save</button>
-            <button class="btn btn--load-table">Load</button>
+            <div class="aside-table-init">
+              <p class="aside-table-init-text">
+                Enter the number of rows in the table.
+              </p>
+              <input
+                type="number"
+                class="input-number aside-table-init-value"
+              />
+              <button class="btn btn--aside-table-create">Create</button>
+            </div>
+            <div class="aside-table-setting hidden">
+              <table class="aside-table">
+                <tr>
+                  <td>
+                    <input
+                      type="text"
+                      class="aside-table-input"
+                      onblur="addRowFromInput()"
+                    />
+                  </td>
+                </tr>
+              </table>
+              <button class="btn btn--save-table">Save</button>
+              <button class="btn btn--load-table">Load</button>
+            </div>
           </div>
         </aside>
         <nav class="site-nav">
