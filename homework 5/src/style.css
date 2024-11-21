@@ -205,3 +205,46 @@ body {
 .bold-text-text {
   font-size: 18px;
 }
+
+@media (max-width: 750px) {
+  .header,
+  .footer {
+    padding: 48px;
+    flex-direction: column;
+  }
+
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .site-nav {
+    grid-column: auto;
+    grid-row: 1;
+  }
+
+  .site-nav-list {
+    justify-content: center;
+  }
+
+  .aside {
+    width: 100vw;
+    grid-row: 2;
+  }
+
+  .aside-table-input {
+    transform: scale(1);
+  }
+
+  .center-box {
+    width: 100vw;
+  }
+
+  .form-inputs {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .input-number {
+    padding: 8px;
+  }
+}
