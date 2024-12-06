@@ -18,7 +18,7 @@
     <div class="container">
       <header>
         <div class="header-text">
-          <h1 class="site-headline">Web Development</h1>
+          <h1 class="site-heading">Web Development</h1>
           <p class="site-desc">
             All my web programming homework is collected here. You can interact
             with them below.
@@ -33,61 +33,98 @@
 
       <main>
         <section class="homeworks">
-          <h2 class="homeworks-headline">My homeworks</h2>
-          <div class="homework-figures">
-            <figure class="hw-figure">
-              <h3 class="hw-name">Homework 1</h3>
-              <p class="hw-desc">
-                In this homework, I had to make positioning in any way and
-                duplicate it up to 5 instances. I used float positioning.
-              </p>
-              <a href="homework 1/src/uk.html" class="hw-button">View</a>
-            </figure>
-
-            <figure class="hw-figure">
-              <h3 class="hw-name">Homework 2</h3>
-              <p class="hw-desc">
-                In this homework, I had to implement positioning using float,
-                css-grid and flexbox. I also tested the map on the main picture.
-              </p>
-              <a href="homework 2/src/float-layout/index.html" class="hw-button"
-                >View</a
-              >
-            </figure>
-
-            <figure class="hw-figure">
-              <h3 class="hw-name">Homework 3</h3>
-              <p class="hw-desc">
-                In this homework, I had to collapse a web page for an email. It
-                was also necessary to adapt the homepage for mobile devices.
-              </p>
-              <ul class="hw-buttons">
-                <a href="homework 3/src/index.html" class="hw-button">View</a>
+          <h2 class="heading-2 homeworks-heading">My homeworks</h2>
+          <div class="slider">
+            <div class="slide">
+              <div class="homework">
+                <h3 class="homework-heading">Homework 1</h3>
+                <p class="homework-desc">
+                  In this homework, I had to make positioning in any way and
+                  duplicate it up to 5 instances. I used float positioning.
+                </p>
+                <a href="homework 1/src/uk.html" class="btn--homework">View</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="homework">
+                <h3 class="homework-heading">Homework 2</h3>
+                <p class="homework-desc">
+                  In this homework, I had to implement positioning using float,
+                  css-grid and flexbox. I also tested the map on the main
+                  picture.
+                </p>
                 <a
-                  href="homework 3/src/email-page.html"
-                  class="hw-button hw-button--email"
-                  >Email</a
+                  href="homework 2/src/float-layout/index.html"
+                  class="btn--homework"
+                  >View</a
                 >
-              </ul>
-            </figure>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="homework">
+                <h3 class="homework-heading">Homework 3</h3>
+                <p class="homework-desc">
+                  In this homework, I had to collapse a web page for an email.
+                  It was also necessary to create a mobile version of the page.
+                </p>
+                <ul class="homework-btn-list">
+                  <a href="homework 3/src/index.html" class="btn--homework"
+                    >View</a
+                  >
+                  <a
+                    href="homework 3/src/email-page.html"
+                    class="btn--homework btn--homework-email"
+                    >Email</a
+                  >
+                </ul>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="homework">
+                <h3 class="homework-heading">Homework 4</h3>
+                <p class="homework-desc">
+                  In this homework, I had to make a page according to a given
+                  layout and arbitrary content. Flexbox and css-grid are used.
+                </p>
+                <a href="homework 4/src/index.html" class="btn--homework"
+                  >View</a
+                >
+              </div>
+            </div>
+            <div class="slide">
+              <div class="homework">
+                <h3 class="homework-heading">Homework 5</h3>
+                <p class="homework-desc">
+                  In this homework, I had to work with JS and write some tasks.
+                  Work with cookies and DOM was implemented.
+                </p>
+                <a href="homework 5/src/index.html" class="btn--homework"
+                  >View</a
+                >
+              </div>
+            </div>
+            <div class="slide">
+              <div class="homework">
+                <h3 class="homework-heading">Homework 6</h3>
+                <p class="homework-desc">Coming soon...</p>
+                <a href="homework 6/src/index.html" class="btn--homework"
+                  >View</a
+                >
+              </div>
+            </div>
 
-            <figure class="hw-figure">
-              <h3 class="hw-name">Homework 4</h3>
-              <p class="hw-desc">
-                In this homework, I had to make a page according to a given
-                layout and arbitrary content. Flexbox and css-grid are used.
-              </p>
-              <a href="homework 4/src/index.html" class="hw-button">View</a>
-            </figure>
-
-            <figure class="hw-figure">
-              <h3 class="hw-name">Homework 5</h3>
-              <p class="hw-desc">
-                In this homework, I had to work with JS and write some tasks.
-                Work with cookies and DOM was implemented.
-              </p>
-              <a href="homework 5/src/index.html" class="hw-button">View</a>
-            </figure>
+            <button class="btn--slider btn--slider-left">
+              <ion-icon
+                name="arrow-back-outline"
+                class="icon--btn-slider"
+              ></ion-icon>
+            </button>
+            <button class="btn--slider btn--slider-right">
+              <ion-icon
+                name="arrow-forward-outline"
+                class="icon--btn-slider"
+              ></ion-icon>
+            </button>
           </div>
         </section>
       </main>
@@ -98,5 +135,16 @@
         </p>
       </footer>
     </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -9,6 +9,10 @@ GREY COLOR - #343a40
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -16,21 +20,20 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
 header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 80px;
-  margin-top: 48px;
-  margin-bottom: 128px;
+  column-gap: 8rem;
+  padding: 8rem 0;
 }
 
 img {
-  border-radius: 12px;
-  box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 1.2rem;
+  box-shadow: 0 3rem 3rem 0 rgba(0, 0, 0, 0.08);
   width: 100%;
 }
 
@@ -38,136 +41,138 @@ img {
   align-self: center;
 }
 
-.site-headline {
-  font-size: 44px;
+.site-heading {
+  font-size: 4.4rem;
   line-height: 1.1;
   letter-spacing: -1px;
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 }
 
 .site-desc {
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.5;
   color: #495057;
 }
 
-.homeworks-headline {
-  font-size: 36px;
-  margin-bottom: 48px;
+.homeworks {
+  padding: 8rem 0;
 }
 
-.homework-figures {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 0 32px;
-  gap: 80px;
-  margin-bottom: 128px;
+.heading-2 {
+  font-size: 3.6rem;
 }
 
-.hw-figure {
-  padding: 32px;
-  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.08);
-  border-radius: 12px;
+.slider {
+  max-width: 110rem;
+  height: 50rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
-.hw-name {
-  font-size: 30px;
-  margin-bottom: 24px;
-}
-
-.hw-desc {
-  font-size: 20px;
-  margin-bottom: 48px;
-  color: #495057;
-}
-
-.hw-buttons {
+.btn--slider {
   display: flex;
-  gap: 12px;
-  list-style: none;
+  position: absolute;
+  padding: 1.6rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  z-index: 10;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-.hw-button:link,
-.hw-button:visited {
+.btn--slider-left,
+.btn--slider-right {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn--slider-left {
+  left: 0;
+}
+
+.btn--slider-right {
+  right: 0;
+}
+
+.icon--btn-slider {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.slide {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  height: 50rem;
+  transition: all 0.8s;
+}
+
+.homework {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 80%;
+  height: 50%;
+  gap: 3.6rem;
+}
+
+.homework-heading {
+  font-size: 3rem;
+}
+
+.homework-desc {
+  flex: 1;
+  font-size: 1.8rem;
+}
+
+.btn--homework:link,
+.btn--homework:visited {
   display: inline-block;
   background-color: #364fc7;
   color: #fff;
-  padding: 14px 32px;
-  font-size: 16px;
+  padding: 1.4rem 3.2rem;
+  font-size: 1.6rem;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
-  border-radius: 100px;
+  border-radius: 10rem;
   transition: all 0.15s ease-in-out;
 }
 
-.hw-button:hover,
-.hw-button:active {
+.btn--homework:hover,
+.btn--homework:active {
   background-color: #3b5bdb;
 }
 
-.hw-button--email:link,
-.hw-button--email:visited {
+.btn--homework-email:link,
+.btn--homework-email:visited {
   background-color: #fff;
   color: #364fc7;
-  box-shadow: inset 0px 0px 0px 5px #364fc7;
+  box-shadow: inset 0 0 0 0.5rem #364fc7;
 }
 
-.hw-button--email:hover,
-.hw-button--email:active {
+.btn--homework-email:hover,
+.btn--homework-email:active {
   background-color: #3b5bdb;
   color: #fff;
   box-shadow: none;
 }
 
-footer {
-  color: #868e96;
-  font-size: 14px;
-  margin-bottom: 48px;
+.homework-btn-list {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
 }
 
-@media (max-width: 800px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-  }
-
-  header {
-    grid-template-columns: 1fr;
-    row-gap: 48px;
-  }
-
-  .header-text {
-    padding: 0 24px;
-  }
-
-  img {
-    width: 90%;
-    justify-self: center;
-  }
-
-  .homeworks-headline {
-    font-size: 36px;
-    margin-bottom: 48px;
-    text-align: center;
-  }
-
-  .homework-figures {
-    grid-template-columns: 1fr;
-    column-gap: 48px;
-  }
-
-  .hw-figure {
-    padding: 48px;
-  }
-
-  .hw-buttons {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  footer {
-    padding: 0 24px;
-  }
+footer {
+  color: #868e96;
+  font-size: 1.4rem;
+  padding: 1.6rem 0 4.8rem 0;
 }
