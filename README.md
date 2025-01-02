@@ -28,6 +28,10 @@ Solve 5 homework assignments, of varying levels of difficulty
    - Interactive list that can be edited and saved in localStorage
    - Working with cookies to save information about the last minimum and maximum number
 
+### Result
+
+The result can be seen on the [website](https://s0wime.github.io/WebDev/)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
